@@ -1,5 +1,5 @@
 ---
-
+import '../styles/global.css';
 ---
 
 <html lang='en'>
@@ -8,11 +8,15 @@
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <title>Astro</title>
+    <title>Go Notebook</title>
   </head>
-  <body>
-    <main>
-      <slot />
-    </main>
+  <body class='h-full px-4 max-w-7xl mx-auto'>
+    <main class='flex-1 mt-16'> <slot /> </main>
   </body>
 </html>
+
+<style>
+  .remark-code-title {
+    background-color: blue;
+  }
+</style>

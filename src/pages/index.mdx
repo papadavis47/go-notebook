@@ -1,9 +1,39 @@
 ---
-layout: '../layouts/Layout.astro'
+layout: '../layouts/MDXLayout.astro'
 ---
+
+import Paragraph from '../components/elements/Paragraph.astro';
+import Heading from '../components/elements/Heading.astro';
+import Subheading from '../components/elements/Subheading.astro';
+import Pre from '../components/elements/Pre.astro';
+export const components = { p: Paragraph, h1: Heading, h2: Subheading, pre: Pre };
 
 # Notes on Go
 
 ## Syntax
 
 This is where I will write some stuff about syntax
+
+## The following is syntax highlighting:
+
+```go:src/main.go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Whatever")
+}
+```
+
+So this is where I can write some more.
+
+And some more here.
+
+And here is some more text.
+
+**Testing**
+
+_Testing Again_
+
+---
